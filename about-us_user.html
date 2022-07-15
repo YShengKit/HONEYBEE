@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <link rel="stylesheet" href="styles_product.css" />
+    <link rel="stylesheet" href="ani.css" />
+    <link rel="stylesheet" href="about-us.css" />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="login.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <script src="product.js" defer></script>
+    <script src="anim.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage_user.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage_user.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown">
+                    <a class="" href="main_product_page_user.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_user.html">Premium Jungle's Delicay</a>
+                        <a href="product2_user.html">Classic Premium White Honey</a>
+                        <a href="product3_user.html">Fresh Signature HoneyComb</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown">
+                    <a class="active" href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us_user.html">About Us</a>
+                        <a href="contact-us_user.html">Contact Us</a>
+                        <a href="faq_user.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list">
+                    <a href="cart_user.html">CART <span class="badge">0</span></a>
+                </li>
+                <li class="menu-list">
+                    <a href="homepage.html" onclick="signOut()">SIGN OUT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Chatbot -->
+    <button class="open-button" onclick="openForm()"></button>
+    <div class="chat-popup" id="myForm">
+        <form action="product2.html" class="form-container">
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bd7d6b81-22ae-4a90-a214-0f79c7bfb3e6"></iframe>
+
+            <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+        </form>
+    </div>
+
+    <div class="about-us-title">
+        <div class="about-us-text">
+            <h1>About Us</h1>
+            <h2>Home > About Us</h2>
+        </div>
+    </div>
+
+    <div class="who-we-are-content">
+        <div class="who-text">
+            <h1><span>Who</span> We Are</h1>
+        </div>
+
+        <div class="who-img"></div>
+
+        <div class="who-description">
+            <p>
+                At HONEY BEE™ we are dedicated to offer to our customers one-stop solution when comes to natural and organic honey. With our large collection of honey from 3 continents, we strive to fulfill customer's needs for pure honey with affordable prices without
+                compromising quality, through precise and unique quality management. We develop mutually rewarding business relationships with the hard-working beekeeping families, through which we are able to source only the best quality.
+                <br /><br /> Our main goal is devoted to educate children and adults about the important role bees play as a pollinator of our food and how more than ever they need our help. Through our educational program, we aim to pass our knowledge
+                to the people on how to differentiate good from bad quality honey, and all the misleading myths which make them take the wrong decision.
+            </p>
+        </div>
+    </div>
+
+    <div class="services-content">
+        <div class="services">
+            <div class="services-text">
+                <h2>What we do</h2>
+                <h1>Our Services</h1>
+            </div>
+        </div>
+
+        <div class="services-hex">
+            <div class="hexagon-row">
+                <div class="hex-1">
+                    <div class="hexagon">
+                        <div class="shape">
+                            <div class="hexagon-in">
+                                <div class="shape-in" style="background-image: url('images/hex1-img.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-content">
+                        <h1>Beekeeping</h1>
+                        <p>
+                            All our bees colonies are grown organically, without the use of drugs and other substances that may fall into the honey and reduce or damage its health benefits.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hex-2">
+                    <div class="hexagon">
+                        <div class="shape">
+                            <div class="hexagon-in">
+                                <div class="shape-in" style="background-image: url('images/hex2-img.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-content">
+                        <h1>Honey Production</h1>
+                        <p>
+                            We collect honey from our own hives only when it’s fully matured to prevent fermentation. Our honey are having very low air’s humidity and absolutely free from antibiotics, pesticides and other pollutants.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hexagon-row">
+                <div class="hex-1">
+                    <div class="hexagon">
+                        <div class="shape">
+                            <div class="hexagon-in">
+                                <div class="shape-in" style="background-image: url('images/hex3-img.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-content">
+                        <h1>Honey Packaging</h1>
+                        <p>
+                            We store and pack our honey at a factory where a team of experts constantly checks the air’s humidity. We then pack the honey in jars without any further heating or processing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hex-2">
+                    <div class="hexagon">
+                        <div class="shape">
+                            <div class="hexagon-in">
+                                <div class="shape-in" style="background-image: url('images/hex4-img.jpg')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hex-content">
+                        <h1>Guaranteed Quality</h1>
+                        <p>
+                            Every batch of our honey are tested in laboratories to ensure the authenticity and quality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="about-us">
+            <div class="about-us-head">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-us-address">
+                <p>
+                    <b class="about-us-address-text">Address:</b> 21 Newstreet, Sweet town, India, 109-74
+                </p>
+            </div>
+            <div class="about-us-info">
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><b>012-3456789</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><b>honeybeetaruc@gmail.com</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p><b>Honey Bee</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <div class="explore-head">
+                <h2>Explore</h2>
+            </div>
+            <div class="explore-nav"><a href="homepage_user.html">Home</a></div>
+            <div class="explore-nav"><a href="about-us_user.html">About Us</a></div>
+            <div class="explore-nav"><a href="#">Register</a></div>
+            <div class="explore-nav">
+                <a href="main_product_page_user.html">Products</a>
+            </div>
+            <div class="explore-nav">
+                <a href="contact-us_user.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

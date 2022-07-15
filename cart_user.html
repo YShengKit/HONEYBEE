@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles_cart.css">
+    <link rel="stylesheet" href="ani.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    
+    <script src="navigation.js" defer></script>
+    <script src="cart.js" defer></script>
+    <script src="login.js" defer></script>
+    <script src="anim.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage_user.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage_user.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown"><a class="" href="main_product_page_user.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_user.html">Premium Jungle Black Honey</a>
+                        <a href="product2_user.html">Classic Premium White Honey</a>
+                        <a href="product3_user.html">Fresh Signature HoneyCake</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown"><a href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us_user.html">About Us</a>
+                        <a href="contact-us_user.html">Contact Us</a>
+                        <a href="faq_user.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list"><a class="active" href="cart_user.html">CART<span class="badge">0</span></a></li>
+                <li class="menu-list"><a href="homepage.html" onclick="signOut()">SIGN OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content-cart">
+        <!-- Cart -->
+        <div class="title">Cart</div>
+        
+        <div class="empty-msg">
+            <img class="shopping-cart-img" src="Images\shopping-cart.png" alt="">
+            <span class="msg">Opps your shopping cart is empty......</span>
+            <a class="btn btn-buy-smth" href="main_product_page_user.html">Shop Now</a>
+        </div>
+
+        <div class="cart-header">
+            <div class="cart-item-header">ITEM</div>
+            <div class="cart-price-header ">PRICE</div>
+            <div class="cart-quantity-header ">QUANTITY</div>
+        </div>
+
+        <div class="cart-items">
+            <!-- created using JS -->
+        </div>
+
+
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">RM0</span>
+            <button class="btn btn-checkout" type="button">CHECKOUT</button>
+        </div>
+    </section>
+
+    <!-- Chatbot -->
+    <button class="open-button" onclick="openForm()" ></button>
+    <div class="chat-popup" id="myForm">
+        <form action="product2.html" class="form-container">
+
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bd7d6b81-22ae-4a90-a214-0f79c7bfb3e6"></iframe>
+
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+     <!-- footer -->
+     <footer>
+        <h2>@2022 HoneyBee. All Rights Reserved</h2>
+    </footer>
+</body>
+</html>

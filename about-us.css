@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.about-us-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    background-image: url("images/honey-01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.about-us-text h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-us-text h2 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.who-text {
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    color: #563434;
+}
+
+.who-text span {
+    color: #eb6d2f;
+}
+
+.who-img {
+    width: auto;
+    height: 351px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/honey-bee.png");
+    transition: 0.3s ease;
+}
+
+.who-description p {
+    font-size: 17px;
+    text-align: center;
+    padding: 30px 60px;
+}
+
+.who-img:hover {
+    background-image: url("images/group-img.jpg");
+    transition: 0.3s ease;
+}
+
+.services {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.services-text h2 {
+    color: #eb6d2f;
+    font-size: 20px;
+}
+
+.services-text h1 {
+    color: #563434;
+    font-size: 40px;
+}
+
+.hexagon-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hex-1,
+.hex-2,
+.hex-3,
+.hex-4 {
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.hex-content h1 {
+    color: #563434;
+    font-size: 25px;
+    padding: 14px;
+}
+
+.hex-content p {
+    padding-bottom: 20px;
+}
+
+.services-hex .hexagon {
+    margin: auto;
+    position: relative;
+    width: 220px;
+    height: 255px;
+}
+
+.services-hex .hexagon-in {
+    position: relative;
+    width: 190px;
+    height: 210px;
+}
+
+.services-hex .hexagon .shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eb6d2f;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.services-hex .hexagon-in .shape-in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}

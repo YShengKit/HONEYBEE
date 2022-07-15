@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Product 2 | Classic Premium White Honey</title>  
+    <link rel="stylesheet" href="styles_product.css">
+    <link rel="stylesheet" href="ani.css">
+    <link rel="stylesheet" href="pr.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <script src="guest.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <script src="function.js" defer></script>   
+    <script src="product.js" defer></script>
+    <script src="anim.js" defer></script>
+
+
+ 
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown"><a class="" href="main_product_page.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_guest.html">Premium Jungle Black Honey</a>
+                        <a href="product2_guest.html">Classic Premium White Honey</a>
+                        <a href="product3_guest.html">Fresh Signature HoneyCake</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown"><a href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us.html">About Us</a>
+                        <a href="contact-us.html">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list"><a href="cart_guest.html">CART <span class="badge">0</span></a></li>
+                <li class="menu-list"><a href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+
+        <!-- Content--Display Image -->
+        <div class="content-left">
+            <div class="content-img">
+                <h3 class="section-header">Product 2  >  Classic White Honey</h3>
+
+                <div class="display">
+                    <img src="Images\whitehoney.png" alt="White Honey" class="display-img">
+                </div>
+            
+                <div class="hover-img">
+                    <div class="img-each">
+                        <img src="Images\whitehoney.png" alt="White Honey" class="product-detail-img main-img" onmouseenter="change1()">
+                    </div>
+                    <div class="img-each">
+                        <img src="Images\whitehoney1.png" alt="White Honey 2" class="product-detail-img sub-img" onmouseenter="change2()">
+                    </div>
+                    <div class="img-each">
+                        <img src="Images\whitehoney2.png" alt="White Honey 3" class="product-detail-img sub2-img" onmouseenter="change3()">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="order">
+                <div class="order-header">
+                    <h1 class="product-price">RM79.90</h1>
+                    <h1 class="product-name">Classic White Honey </h1>
+                    <div id="heart">
+                        <img id="heart-border" src="Images\heart_border.png" alt="" onclick="convertHeart()">
+                    </div>
+                </div>
+                
+                
+                <div class="review"> 
+                    <div class="review-stars">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                    </div> 
+                    <span class="review-num">359 Reviews</span>
+                </div>
+
+                <div class="qty">
+                    <h3 class="qty-title">Quantity</h3>
+                    <button class="decrease btn" onclick="decrease()"><b>-</b></button>
+                    <div class="qty-input">1</div>
+                    <button class="increment btn" onclick="increment()"><b>+</b></button>
+                </div>
+
+                <div class="addToCart">
+                    <button class="btn btn-text btn-addToCart" onclick="cartAnimation(); addCartSound('https://www.myinstants.com/media/sounds/tethys.mp3')">Add To Cart  +</button>
+                    
+                </div>
+
+                <div class="extra-info">
+                    <ul class="info-list">
+                        <li class="info">100% authentic products</li>
+                        <li class="info">10 days full refund & exchange policy</li>
+                        <li class="info">Orders are processed within 2 working days</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Content --Descriptions & Details -->
+        <div class="content-right">
+            <h1 class="section-header">Classic White Honey</h1>
+            <p>
+                A product that is loved by many, you can never go wrong with our classic white honey. This product helps consumers with anti-aging and relaxing the mind and body. It is high in Vitamin B6 which also works as a natural remedy for insomnia by increasing the body's production of melatonin. Besides that, it is valued for its anti-aging benefits and also improves brain function and memory, reduces stomach and mouth ulcers and aids in healthy fetal development during pregnancy hence the reason why it is popular among pregnant womens..
+            </p><br>
+            <div class="display-video">
+                <video style="width: 540px; height: 280px;" autoplay loop muted playsinline>
+                    <source src="Images\RoyalWhite.mp4" type="video/mp4">
+                    <source src="Images\RoyalWhite.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div><br>
+ 
+            <img class="harvest-img" src="Images\wharvest.png" style="width: 540px; height: 280px;" alt="white honey harvest"/> <br>
+            <p>
+                The Classic White Honey is made by honeybees that hive at the coast, by the waters of Sumbawa Island in Sumatra, Indonesia. This rare, highly sought-after, white honey is creamier than many others and has a floral flavor that is delightfully fresh, not overly sweet, and an almost-unnoticeable tinge of sourness.
+            </p><br>
+            <div class="slider">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img  class="slideshow-img"  src="Images\raw-honey.jpg" style="width: 540px; height: 280px;">
+                        <div class="text">100% Natural and Organic</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img  class="slideshow-img" src="Images\honey12.jpg" style="width: 540px; height: 280px;">
+                        <div class="text">Healthy Beverage</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <img   class="slideshow-img" src="Images\honey13.jpg" style="width: 540px; height: 280px;"> 
+                        <div class="text">Sharing is Caring</div>
+                    </div>
+                        
+                </div>
+            
+                <div class="slide-dot" style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+            </div><br>
+            <div class="Informations">
+                <h2>Informations</h2><br>
+                <p><b><u>Storage for All Products :</u></b> <br>
+                    <ol>
+                        <li>Please do not place in refrigerators</li>
+                        <li>Prevent exposing to direct sunlight (Best kept under shades where humidity is low)</li>
+                        <li>There is no expiry for raw honey</li>  
+                    </ol>
+                    <br>
+                    <b><u>Way of Consuming our Honey Products:</u></b> <br>
+                    <ul>
+                        <li> Direct consumption: 1 tablespoon(15g) scooped directly and consumed </li>
+                        <li>Beverage : Recommended to use 2 tablespoon(30g) of honey in a cup(250ml) of water
+                        </li>
+                        <li> Infants under the age of 12 months are not advisable to consume</li>
+                    </ul> 
+                </p>
+            </div>  
+                
+            
+   
+            
+        </div>
+    </section>
+
+    <!-- comment -->
+    <section class="reviews">
+        <!-- Overall rating -->
+        <div class="rating-section">
+            <div class="rating-left">
+                <h1 class="rating-header">Rating</h1>
+                <div class="rate-score">
+                    <span class="score-avg">5.0</span>
+                    <span class="score-total">/5</span>
+                    <div class="stars">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                        <img class="star" src="Images\star.png" alt="star">
+                    </div>
+                </div>
+                <div class="ratings-num">557 Reviews</div>
+            </div>
+
+        </div>
+
+        <!-- Comments -->
+        <div class="comment-section">
+            <h1 class="comment-header">Customer's feedbacks</h1>
+            <div class="comments">
+                <div class="comment-each">
+                    <div class="user-info">
+                        <div class="user-pic">
+                            <img class="default-avatar" src="Images\default-avatar.svg" alt="">
+                        </div>
+                        <div class="user-name">Ali Pattinson</div>
+                        <div class="stars">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                        </div>
+                        <div class="comment-date">18 Feb 2022</div>
+                    </div>
+                    <div class="user-comment">
+                        <div class="user-comment-section-1">
+                            <h1 class="comment-title">I LOVE THIS SO MUCH</h1>
+                            <p class="comment-content">Hi.. i nak review jujur… thanks god semua okey… barang pun tkde yg kurang semua okey… kualiti nampak macam elok..sbb i pun belum try… so far packaging pun okey takde error..</p>
+                        </div>
+                        <div class="user-comment-section-2">
+                            <div class="like-icon">
+                                <img class="like-btn" src="Images\like-icon.svg" alt="">
+                                <span class="like-num">17</span>
+                            </div>
+                            <div class="dropdown-3-dots dropdown">
+                                <img class="three-dots" src="Images\3-dots.svg" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#">Not Helpful</a>
+                                    <a href="#">Report Abuse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-each">
+                    <div class="user-info">
+                        <div class="user-pic">
+                            <img class="default-avatar" src="Images\default-avatar.svg" alt="">
+                        </div>
+                        <div class="user-name">Abu Holland</div>
+                        <div class="stars">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                            <img class="star" src="Images\star.png" alt="star">
+                        </div>
+                        <div class="comment-date">18 Feb 2022</div>
+                    </div>
+                    <div class="user-comment">
+                        <div class="user-comment-section-1">
+                            <h1 class="comment-title">I LOVE THIS SO MUCH</h1>
+                            <p class="comment-content">Hi.. i nak review jujur… thanks god semua okey… barang pun tkde yg kurang semua okey… kualiti nampak macam elok..sbb i pun belum try… so far packaging pun okey takde error..</p>
+                        </div>
+                        <div class="user-comment-section-2">
+                            <div class="like-icon">
+                                <img class="like-btn" src="Images\like-icon.svg" alt="">
+                                <span class="like-num">17</span>
+                            </div>
+                            <div class="dropdown-3-dots dropdown">
+                                <img class="three-dots" src="Images\3-dots.svg" alt="">
+                                <div class="dropdown-content">
+                                    <a href="#">Not Helpful</a>
+                                    <a href="#">Report Abuse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chatbot -->
+        <button class="open-button" onclick="openForm()" ></button>
+        <div class="chat-popup" id="myForm">
+            <form action="product2.html" class="form-container">
+
+                <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bd7d6b81-22ae-4a90-a214-0f79c7bfb3e6"></iframe>
+
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <!-- Product recommendations -->
+        <section class="slider">
+            <div class="product-contain">
+                <h1 class="recommend-header" >You may also like</h1>
+                <ul id="autowidth" class="cs-hidden">
+                    <!--1-->
+                    <li class="item">
+                        <!--------boxslider-------->
+                        <div class="box">
+                            <!---img-box-->
+                            <div class="slide-img">
+                                <img src="Images\honeycake.png" alt="honey cake">
+                                <div class="overlay">
+                                    <!--buy-btn-->
+                                    <a href="product3_guest.html" class="buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="product3_guest.html">Honey cake</a>
+                                </div>
+                                <!--price-->
+                                <a href="product3_guest.html">RM85.90</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                     <!--2-->
+                     <li class="item">
+                        <!--------boxslider-------->
+                        <div class="box">
+                            <!---img-box-->
+                            <div class="slide-img">
+                                <img src="Images\blackhoney.png" alt="black honey">
+                                <div class="overlay">
+                                    <!--buy-btn-->
+                                    <a href="product1_guest.html" class="buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="product1_guest.html">Premium Black Honey</a>
+                                </div>
+                                <!--price-->
+                                <a href="product1_guest.html">RM99.90</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                     <!--3-->
+                     <li class="item">
+                        <!--------boxslider-------->
+                        <div class="box">
+                            <!---img-box-->
+                            <div class="slide-img">
+                                <img src="Images\honey-ice-cream.jpg" alt="icecream">
+                                <div class="overlay">
+                                    <!--buy-btn-->
+                                    <a href="#" class="buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Honey Ice Cream</a>
+                                </div>
+                                <!--price-->
+                                <a href="#">RM42.95</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                     <!--4-->
+                     <li class="item">
+                        <!--------boxslider-------->
+                        <div class="box">
+                            <!---img-box-->
+                            <div class="slide-img">
+                                <img src="Images\raw-honey.jpg"  alt="raw honey">
+                                <div class="overlay">
+                                    <!--buy-btn-->
+                                    <a href="#" class="buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Raw Honey</a>
+                                </div>
+                                <!--price-->
+                                <a href="#">RM42.95</a>
+                            </div>
+                        </div>
+                    </li>
+        
+                     <!--5-->
+                     <li class="item">
+                        <!--------boxslider-------->
+                        <div class="box">
+                            <!---img-box-->
+                            <div class="slide-img">
+                                <img class="display-img" src="Images\honey-drink.jpg" alt="honey drink">
+                                <div class="overlay">
+                                    <!--buy-btn-->
+                                    <a href="#" class="buy-btn">Buy Now</a>
+                                </div>
+                            </div>
+                            <!--detail-box-->
+                            <div class="detail-box">
+                                <!--type-->
+                                <div class="type">
+                                    <a href="#">Honey Drink</a>
+                                </div>
+                                <!--price-->
+                                <a href="#">RM42.95</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!-- footer -->
+
+    <footer>
+        <h2>@2022 HoneyBee. All Rights Reserved</h2>
+    </footer>
+
+</body>
+</html>

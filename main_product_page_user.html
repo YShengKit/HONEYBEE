@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - HoneyBee</title>
+    <link rel="stylesheet" href="styles_product.css">
+    <link rel="stylesheet" href="ani.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="main_product_page.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="navigation.js" defer></script>
+    <script src="product.js" defer></script>
+    <script src="login.js" defer></script>
+    <script src="anim.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage_user.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage_user.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown"><a class="active" href="main_product_page_user.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_user.html">Premium Jungle Black Honey</a>
+                        <a href="product2_user.html">Classic Premium White Honey</a>
+                        <a href="product3_user.html">Fresh Signature HoneyCake</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown"><a href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us_user.html">About Us</a>
+                        <a href="contact-us_user.html">Contact Us</a>
+                        <a href="faq_user.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list"><a href="cart_user.html">CART <span class="badge">0</span></a></li>
+                <li class="menu-list"><a href="homepage.html" onclick="signOut()">SIGN OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main Products Content-->
+    <div class="section">
+        <div class="cards">
+            <div class="our-products">
+                <h1>Our Products</h1>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <a href="product1_user.html"><img src="Images/blackhoneyprod01.png" onmouseover="this.src='Images/blackhoneyprod02.png'" onmouseout="this.src='Images/blackhoneyprod01.png'"></a>
+                </div>
+                <div class="description">
+                    <h1>Premium Jungle Black Honey</h1>
+                    <p><b>Price</b><span>RM99.90</span><del>RM120.90</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="product1_user.html" class="learn-more">Learn More</a>
+                </div>
+                <div class="star-icons">
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star-half-alt"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <a href="product2_user.html"><img src="Images/whitehoney.png" onmouseover="this.src='Images/classicwhiteprod02.jpg'" onmouseout="this.src='Images/whitehoney.png'"></a>
+                </div>
+                <div class="description">
+                    <h1>Classic Premium White Honey</h1>
+                    <p><b>Price</b><span>RM79.90</span><del>RM85.90</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="product2_user.html" class="learn-more">Learn More</a>
+                </div>
+                <div class="star-icons">
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star-half-alt"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-section">
+                    <a href="product3_user.html"><img src="Images/honeycakepro01.png" onmouseover="this.src='Images/honeycombprod02.jpg'" onmouseout="this.src='Images/honeycakepro01.png'"></a>
+                </div>
+                <div class="description">
+                    <h1>Fresh Signature HoneyCake</h1>
+                    <p><b>Price</b><span>RM84.90</span><del>RM120.90</del></p>
+                </div>
+                <div class="button-group">
+                    <a href="product3_user.html" class="learn-more">Learn More</a>
+                </div>
+                <div class="star-icons">
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star-half-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <button class="open-button" onclick="openForm()" ></button>
+    <div class="chat-popup" id="myForm">
+        <form action="product2.html" class="form-container">
+
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bd7d6b81-22ae-4a90-a214-0f79c7bfb3e6"></iframe>
+
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="about-us">
+            <div class="about-us-head">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-us-address">
+                <p>
+                    <b class="about-us-address-text">Address:</b> 21 Newstreet, Sweet town, India, 109-74
+                </p>
+            </div>
+            <div class="about-us-info">
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><b>012-3456789</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><b>honeybeetaruc@gmail.com</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p><b>Honey Bee</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <div class="explore-head">
+                <h2>Explore</h2>
+            </div>
+            <div class="explore-nav"><a href="homepage_user.html">Home</a></div>
+            <div class="explore-nav"><a href="about-us_user.html">About Us</a></div>
+            <div class="explore-nav"><a href="signup.html">Register</a></div>
+            <div class="explore-nav">
+                <a href="main_product_page_user.html">Products</a>
+            </div>
+            <div class="explore-nav">
+                <a href="contact-us_user.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <h2>@2022 HoneyBee. All Rights Reserved</h2>
+    </footer>
+
+</body>
+</html>

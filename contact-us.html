@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <link rel="stylesheet" href="contact-us.css" />
+    <link rel="stylesheet" href="ani.css">
+    <link rel="stylesheet" href="styles_product.css">
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="https://kit.fontawesome.com/ed67ab4165.js" crossorigin="anonymous"></script>
+    <script src="guest.js" defer></script>
+    <script src="navigation.js" defer></script>
+    <script src="product.js" defer></script>
+    <script src="anim.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown"><a class="" href="main_product_page.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_guest.html">Premium Jungle's Delicay</a>
+                        <a href="product2_guest.html">Classic Premium White Honey</a>
+                        <a href="product3_guest.html">Fresh Signature HoneyComb</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown"><a class="active" href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us.html">About Us</a>
+                        <a href="contact-us.html">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list"><a href="cart_guest.html">CART <span class="badge">0</span></a></li>
+                <li class="menu-list"><a href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Chatbot -->
+    <button class="open-button" onclick="openForm()"></button>
+    <div class="chat-popup" id="myForm">
+        <form action="product2.html" class="form-container">
+
+            <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bd7d6b81-22ae-4a90-a214-0f79c7bfb3e6"></iframe>
+
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="contact-us-title">
+        <div class="contact-us-text">
+            <h1>Contact Us</h1>
+            <h2>Home > Contact Us</h2>
+        </div>
+    </div>
+
+    <div class="have-some-questions">
+        <div class="have-some-question-title">
+            <div class="questions-text">
+                <h1>Have Some Questions?</h1>
+            </div>
+        </div>
+
+        <div class="question-container">
+            <div class="ques-col">
+                <h2>Contact Us Through</h2>
+                <div class="about-us-info">
+                    <div class="about-us-info-part">
+                        <i class="fa-solid fa-phone"></i>
+                        <p><b>012-3456789</b></p>
+                    </div>
+                    <div class="about-us-info-part">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p><b>honeybeetaruc@gmail.com</b></p>
+                    </div>
+                    <div class="about-us-info-part">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p><b>29 Nicolas str, New York, 987597-50</b></p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <div class="sm">
+                        <a href="https://www.facebook.com/Honey-Bee-113095601366542" target="_blank">
+                            <div class="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="sm">
+                        <a href="https://twitter.com/HoneyBeeTARUC" target="_blank">
+                            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                    </a>
+
+
+                    <div class="sm">
+                        <a href="https://www.youtube.com/channel/UCyG8bNdtPB3s7lfnck5NvAQ" target="_blank">
+                            <div class="youtube"><i class="fa-brands fa-youtube"></i></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="sm">
+                        <a href="https://www.instagram.com/honeybeetaruc/" target="_blank">
+                            <div class="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="ques-col">
+                <h2>Opening Hours</h2>
+                <p class="date"><b>Monday:</b> 9:00 – 19:00</p>
+                <p class="date"><b>Tuesday:</b> 9:00 – 19:00</p>
+                <p class="date"><b>Wednesday:</b> 9:00 – 19:00</p>
+                <p class="date"><b>Thursday:</b> 9:00 – 19:00</p>
+                <p class="date"><b>Friday:</b> 9:00 – 19:00</p>
+                <p class="date"><b>Saturday:</b> 11:00 – 16:00</p>
+                <p class="date"><b>Sunday:</b> CLOSED</p>
+
+            </div>
+
+            <div class="ques-col">
+                <h2>Send An Email</h2>
+                <div class="ques-container">
+                    <form action="https://formsubmit.co/honeybeetaruc@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contact-us.html" method="POST">
+                        <div class="form-content">
+                            <h3>Your Name</h3><input type="text" name="name" id="name" required></div>
+                        <div class="form-content">
+                            <h3>Your Email</h3><input type="email" name="email" id="email" required></div>
+                        <div class="form-content">
+                            <h3>Your Message</h3> <textarea id="message" name="message" rows="4"></textarea></div>
+                        <div class="submit-btn"><button type="submit"><p><b>Submit</b></p></button></div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="about-us">
+            <div class="about-us-head">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-us-address">
+                <p>
+                    <b class="about-us-address-text">Address:</b> 21 Newstreet, Sweet town, India, 109-74
+                </p>
+            </div>
+            <div class="about-us-info">
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><b>012-3456789</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><b>honeybeetaruc@gmail.com</b></p>
+                </div>
+                <div class="about-us-info-part">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p><b>Honey Bee</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <div class="explore-head">
+                <h2>Explore</h2>
+            </div>
+            <div class="explore-nav"><a href="homepage.html">Home</a></div>
+            <div class="explore-nav"><a href="about-us.html">About Us</a></div>
+            <div class="explore-nav"><a href="signup.html">Register</a></div>
+            <div class="explore-nav">
+                <a href="main_product_page.html">Products</a>
+            </div>
+            <div class="explore-nav">
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>

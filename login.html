@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - Honey Bee</title>
+    <link rel="stylesheet" href="styles_product.css">
+    <link rel="stylesheet" href="styles_login.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <script src="navigation.js" defer></script>
+    <script src="product.js" defer></script>
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <nav class="menu-horizontal nav">
+            <a href="homepage.html" class="brand-name">Honey Bee</a>
+            <div class="responsive-bar" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu-bar">
+                <li class="menu-list"><a href="homepage.html">HOME</a></li>
+                <li class="menu-list dropbtn dropdown"><a class="" href="main_product_page.html">PRODUCT</a>
+                    <div class="dropdown-content">
+                        <a href="product1_guest.html">Premium Jungle Black Honey</a>
+                        <a href="product2_guest.html">Classic Premium White Honey</a>
+                        <a href="product3_guest.html">Fresh Signature HoneyCake</a>
+                    </div>
+                </li>
+                <li class="menu-list dropbtn dropdown"><a href="#">INFO</a>
+                    <div class="dropdown-content">
+                        <a href="about-us.html">About Us</a>
+                        <a href="contact-us.html">Contact Us</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </li>
+                <li class="menu-list"><a href="cart_guest.html">CART <span class="badge">0</span></a></li>
+                <li class="menu-list"><a class="active" href="login.html">LOG IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="imgBx">
+            <img src="Images/honeybeebg.jpg" alt="">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="homepage_user.html" method="get" target="">
+                    <div class="inputBx container">
+                        <span>Username</span>
+                        <input type="text" id="userName" name="">
+                    </div>
+                    <div class="inputBx">
+                        <span>Password</span>
+                        <input type="password" id="userPw" name="">
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox" name=""> Remember me</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Sign in" name="" onclick="check()">
+                    </div>
+                    <!--Register ref here-->
+                    <div class="inputBx">
+                        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+                    </div>
+                </form>
+                
+            </div>
+                
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h2>@2022 HoneyBee. All Rights Reserved</h2>
+    </footer>
+</body>
+</html>

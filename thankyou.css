@@ -1,0 +1,340 @@
+/* general */
+@font-face {
+    font-family: 'myFonts';
+    src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'myFonts';
+}
+
+
+body{
+    background-color: rgb(253, 255, 232);
+}
+
+.info-header{
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+}
+
+/* thank you msg section */
+.thankyou-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.checked-icon{
+    margin-top: -18px;
+}
+
+/* recipt section */
+.receipt{
+    border: 3px solid gray;
+    background-color: white;
+    font-size: 15px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1%;
+    margin: 0 20% 3%;
+    max-width: 90%;
+}
+
+/* receipt --company section */
+.company-details{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 5% 1%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid gray;
+}
+
+.company-logo{
+    display: flex;
+    flex-flow: column;
+    margin-top: 2%;
+}
+
+.company-logo>img{
+    width: 86px;
+    height: 86px;
+}
+
+/* receipt --customer info section */
+.customer-details{
+    /* border: 1px solid yellow; */
+    padding: 0 5% 1%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid gray;
+}
+.customer-info{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+/* receipt section */
+
+
+
+/* product table */
+.receipt-details{
+    clear: both;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    border-bottom: 1px solid gray;
+}
+
+.receipt-section-1{
+    border-collapse: collapse;
+    width:90%;
+    /* border: 1px solid black; */
+    table-layout: fixed;
+    margin-bottom: 3%;
+}
+
+.receipt-total{
+    border-collapse: collapse;
+    width:40%;
+    /* border: 1px solid black; */
+    table-layout: fixed;
+}
+
+.products-info-calculation>tr:nth-child(3){
+    background-color: rgb(196, 196, 196);
+}
+
+th, td{
+    border-bottom:1px solid black;
+    vertical-align:middle top;
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: nowrap;
+    padding-right: 3%;
+    /* white-space: nowrap; */
+}
+
+th{
+    background-color: rgb(182, 178, 178);
+}
+
+.receipt-header>tr>th:nth-child(4),
+.receipt-header>tr>th:nth-child(5){
+    text-align: right;
+}
+
+.table-price, .per-total{
+    text-align: right;
+}
+
+.table-qty, .receipt-header>tr>th:nth-child(3){
+    text-align: center;
+}
+
+
+
+/* receipt section 2 */
+.receipt-section-2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.products-info-calculation>tr>td:nth-child(2){
+    text-align: right;
+}
+
+.shipping-msg{
+    font-size: 13px;
+    margin-bottom: 5%;
+    color: rgb(67, 67, 67);
+}
+
+.expected-date{
+    color: rgb(0, 157, 0);
+}
+
+/* mini footer(receipt)*/
+.receipt-footer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.footer-thx{
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(132, 132, 132);
+}
+
+.footer-company-name{
+    margin-top: -20px;
+    color: rgb(206, 198, 48);
+}
+
+/* redirect section */
+.redirect-container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.redirect-msg{
+    text-align: center;
+}
+
+.btn-part{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    margin-bottom: 2%;
+}
+
+.btn-print{
+    padding: 1%;
+    margin-left: 35%;
+    border: none;
+    background-color: rgb(77, 139, 246);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.btn-complete{
+    padding: 1%;
+    margin-right: 35%;
+    border: none;
+    background-color: rgb(237, 242, 86);
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+.btn-print:hover{
+    background-color:rgb(100, 147, 186);
+    color: rgb(108, 106, 106);
+}
+
+.btn-complete:hover{
+    background-color:rgb(213, 215, 167);
+    color: rgb(108, 106, 106);
+}
+
+
+
+/* Printing section */
+@media print{
+
+    body{
+        -webkit-print-color-adjust: exact;
+    }
+
+    .company-logo{
+        margin-top: 2% !important;
+    }
+
+    .company-logo>img{
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .thankyou-msg, .redirect{
+        display: none !important;
+    }
+
+    .receipt{
+        clear: both !important;
+        max-width: 1000px !important;
+        margin: 0 10% 3% !important;
+    }
+
+    .receipt-section-2{
+        display: flex;
+        flex-flow: row !important;
+    }
+
+    .shipping-msg{
+        margin-right: auto !important;
+    }
+}
+
+/* responsive */
+@media (max-width:1120px) {
+    .receipt{
+        margin: 0 5%;
+    }
+
+    .receipt-section-2{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .btn-part{
+        margin-top: 5%;
+        width: 60%;
+        align-self: center;
+    }
+
+    .btn-print{
+        margin-left: 0;
+    }
+
+    .btn-complete{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:830px) {
+    .company-logo>img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .receipt{
+        font-size: 8px;
+    }
+
+    table.receipt-total {
+        table-layout: fixed;
+        width: 200px;
+    }
+
+    .receipt-section-2{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-part{
+        margin-top: 0;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .btn-complete, .btn-print{
+        margin-top: 5%;
+    }
+
+}

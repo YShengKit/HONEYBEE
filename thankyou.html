@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Receipt</title>
+    <link rel="stylesheet" href="thankyou.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <script src="thankyou.js" defer></script>
+</head>
+<body>
+    <!-- Header/Title -->
+    <section class="thankyou-msg">
+        <!-- message + icon -->
+        <div class="company-logo">
+            HoneyBee
+        </div>
+        <h1>Thank you for your purchase!!</h1><br>
+        <img class="checked-icon" src="Images\checked-icon.svg" alt="checked-icon">
+        <span>Your order has been confirmed!</span>
+    </section>
+
+
+    <!-- Receipt/Invoice section -->
+    <section class="receipt">
+        <!-- receipt company info section -->
+        <div class="company-details">
+            <div class="company-address">
+                <h1 class="info-header">Bill from</h1>
+                <span class="company">HoneyBee Store</span><br>
+                <span class="c-address-1">Jalan Genting Kelang, Setapak</span><br>
+                <span class="c-address-2">53300 Kuala Lumpur</span><br>
+                <span class="company-country">Malaysia</span><br>
+                <span class="c-email">honeybeetaruc@gmail.com</span><br>
+                <span class="c-phone">012-69696969</span>
+            </div>
+            <div class="company-logo">
+                <img src="Images\hb-logo-circle.png" alt="HoneyBee company logo">
+                <h3>HoneyBee</h3>
+            </div>
+        </div>
+        <!-- receipt order-info (customer)-->
+        <div class="customer-details">
+
+            <div class="customer-info">
+                <div class="info-left">
+                    <h1 class="info-header">Recipient</h1>
+                    <span class="name"></span><br>
+                    <span class="address_1"></span><br>
+                    <span class="address_2"></span><br>
+                    <span class="country"></span><br>
+                    <span class="email"></span><br>
+                    <span class="phone"></span>
+                </div>
+                <div class="info-right">
+                    <h1 class="info-header">Order Date</h1>
+                    <span class="order-date"></span>
+                    <h1 class="info-header">Payment methods</h1>
+                    <span class="payment-methods"></span>
+                    <h1 class="info-header">Shipping methods</h1>
+                    <span class="shipping-methods"></span>
+                </div>
+            </div>
+        </div>
+        <!-- order&invoice info (table form) -->
+        <div class="receipt-details">
+            <table class="receipt-section-1">
+                <thead class="receipt-header">
+                    <tr>
+                        <th style="width: 6%;">No.</th>
+                        <th style="width: 20%;">Products</th>
+                        <th style="width: 10%;">Quantity</th>
+                        <th style="width: 20%;">Unit price</th>
+                        <th style="width: 20%;">Total price</th>
+                    </tr>
+                </thead>
+                <tbody class="products-info">
+                    <!--each items created by js  -->
+
+                </tbody>
+                
+            </table>
+            <div class="receipt-section-2">
+                <div class="shipping-msg">
+                    <span>Expected arrived date</span><br>
+                    <span class="expected-date"></span><br>
+                </div>
+                <table class="receipt-total">
+                    <tbody class="products-info-calculation">
+
+                        <!-- subtotal calculation -->
+                        <tr>
+                            <td>Subtotal</td>
+                            <td class="table-subtotal"></td>
+                        </tr>
+    
+                        <!-- shipping fee -->
+                        <tr>
+                            <!-- <td colspan="3"></td> -->
+                            <td>Shipping Fee</td>
+                            <td class="table-shipping-fee">RM4.00</td>
+                        </tr>
+                        
+                        <!-- Grand Total -->
+                        <tr>
+                            <!-- <td colspan="3"></td> -->
+                            <td>Total Payable</td>
+                            <td class="table-total-payable"></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="receipt-footer">
+            <span class="footer-thx">Thank you for shopping</span><br>
+            <span class="footer-company-name">HoneyBee Team</span>
+        </div>
+    </section>
+
+    <!-- Redirected & additional countdown -->
+    <section class="redirect">
+        <div class="redirect-container">
+            <div class="btn-part">
+                <button class="btn-print" onclick="document.title='HoneyBee_Receipt'; window.print();">Print Receipt</button>
+                <button class="btn-complete">Back to main page</button>
+            </div>
+            <div class="redirect-msg">You will be redirect to merchant site in <span id="countdown">100</span> second(s).</div>
+        </div>
+    </section>
+
+   
+    
+
+</body>
+</html>

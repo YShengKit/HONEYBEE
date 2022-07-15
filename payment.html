@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles_payment.css">
+    <link rel="icon" type="image/x-icon" href="Images\hb-logo-circle.png" >
+    <script src="payment.js" defer></script>
+</head>
+<body>
+    <!-- Main title -->
+    <h1 class="payment-header">Payment</h1>
+    <!-- Content -->
+    <section class="content-payment">
+        <!-- Payment summary -->
+        <div class="payment-summary">
+            <div class="summary-title">Payment Summary</div>
+            <div class="summary-items">
+                <!-- created using JS -->
+            </div>
+
+            <!-- discount area(user)--display none for guest -->
+            <div class="discount">
+                <div class="discount-left">
+                    <div class="discount-title">Discount/Voucher</div>
+                    <div class="discount-input"><input class="discount-code" type="text"></div>
+                </div>
+                <div class="discount-right">
+                    <button class="btn btn-discount" onclick="applyDiscount()">APPLY DISCOUNT</button>
+                </div>
+            </div>
+
+            <div class="summary-details">
+                <div class="summary-subtotal">
+                    <div class="summary-subtotal-title">Subotal</div>
+                    <div class="summary-subtotal-price">RM0</div>
+                </div>
+                <div class="summary-shippingfee">
+                    <div class="summary-shp-title">Shipping Fee</div>
+                    <div class="summary-shp-price">RM0.00</div>
+                </div>
+                <div class="summary-total">
+                    <div class="summary-total-title">Total Payable</div>
+                    <div class="summary-total-price">RM0</div>
+                </div>
+                <div class="tax-info">Price includes all taxes</div>
+            </div>
+        </div>
+
+        <div class="user-info">
+            <!-- forms -->
+            <div class="user-forms">
+                <form  action="thankyou.html" method="get" target="" >
+
+                    <!-- first section -->
+                    <div class="info_1" style="visibility: visible; display: block;" > 
+                        <div class="info-title">User Information</div>
+                        <div class="username-lbl">
+                            <label id="lbl-fname" for="fname">First Name</label>
+                            <label id="lbl-lname" for="lname">Last Name</label>
+                        </div>
+                        <div class="username">
+                            <input type="text" id="fname" name="fname" placeholder="Will" onfocus="this.placeholder=''" onblur="this.placeholder='Will'" pattern="[a-zA-Z]{2,30}" maxlength="30" required>
+                            <input type="text" id="lname" name="lname" placeholder="Smith" onfocus="this.placeholder=''" onblur="this.placeholder='Smith'" pattern="[a-zA-Z]{2,30}" maxlength="30" required>
+                        </div>
+                        <div class="email">
+                            <div class="email-lbl">
+                                <label id="lbl-email" for="email">Email</label>
+                            </div>
+                            <input type="email" id="email" name="email" placeholder="slapyou@chris.com" onfocus="this.placeholder=''" onblur="this.placeholder='slapyou@chris.com'" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-lbl">
+                                <label id="lbl-phone" for="phone">Contact Number</label>
+                            </div>
+                            <input type="tel" id="phone" name="phone" placeholder="012-3456789" onfocus="this.placeholder=''" onblur="this.placeholder='012-3456789'"  pattern="[0-9]{3}-[0-9]{7}" required>
+                        </div>
+                        <!-- NEXT button -->
+                        <div class="nav-btn">
+                            <a class="btn btn-toCart" href="#">BACK TO CART</a>
+                            <input class="btn btn-next" type="button" value="NEXT" onclick="validationSection_1();">
+                        </div>
+                    </div>
+
+                    <!-- second section -->
+                    <div class="info_2" style="visibility: hidden; display: none;" >
+                        <div class="info-title">Shipping Information</div>
+                        <div class="country">
+                            <div class="country-lbl">
+                                <label id="lbl-country" for="phone">Country/Region</label>
+                            </div>
+                            <select id="country" name="country">
+                                <option value="Malaysia">Malaysia </option>
+                                <option value="Singapore">Singapore </option>
+                                <option value="Thailand">Thailand </option>
+                                <option value="Indonesia">Indonesia </option>
+                                <option value="Filipina">Filipina </option>
+                            </select>
+                        </div>
+                        <div class="address">
+                            <div class="address-lbl">
+                                <label id="lbl-address" for="address">Address</label>
+                            </div>
+                            <input type="text" id="address" name="address" placeholder="B001K(Block B), Tan Sri Khaw Kai Boh Building, Jalan Genting Kelang" onfocus="this.placeholder=''" onblur="this.placeholder='B001K(Block B), Tan Sri Khaw Kai Boh Building, Jalan Genting Kelang'" pattern="[\w\d\s,'.\)\(-]*" required>
+                        </div>
+                        <div class="pcst-lbl">
+                            <label id="lbl-postcode" for="postcode">Postcode</label>
+                            <label id="lbl-city" for="city">City</label>
+                            <label id="lbl-state" for="state">State/Territory</label>
+                        </div>
+                        <div class="pcst">
+                            <input type="text" id="postcode" name="postcode" placeholder="53100" onfocus="this.placeholder=''" onblur="this.placeholder='53100'" pattern="[\d]{5,9}" required>
+                            <input type="text" id="city" name="city" placeholder="Kuala Lumpur" onfocus="this.placeholder=''" onblur="this.placeholder='Kuala Lumpur'" pattern="[\w\d\s,'.-]*" required>
+                            <input type="text" id="state" name="state" placeholder="Selangor" onfocus="this.placeholder=''" onblur="this.placeholder='Selangor'" pattern="[\w\d\s,'.-]*" required>
+                        </div>
+
+                        <div class="shipping-methods">
+                            <div class="shipping-methods-lbl">
+                                <label id="lbl-shipping-methods" for="shipping-methods">Shipping Methods</label>
+                            </div>
+                            <div id="shipping-methods">
+                                <label for="J&T">
+                                    <input class="shipping-selections" type="radio" id="J&T" name="shipping-methods" value="J&T" data-fee="RM5.00" required>
+                                    <img src="Images\j&t.png" alt="j&t" >
+                                </label>
+                                <label for="poslaju">
+                                    <input class="shipping-selections" type="radio" id="poslaju" name="shipping-methods" value="PosLaju" data-fee="RM4.00" required>
+                                    <img src="Images\poslaju.png" alt="poslaju" >
+                                </label>
+                                <label for="ninjavan">
+                                    <input class="shipping-selections" type="radio" id="ninjavan" name="shipping-methods" value="NinjaVan" data-fee="RM4.50" required>
+                                    <img src="Images\ninjavan.png" alt="ninjanvan" >
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- PREVIOUS and NEXT buttons -->
+                        <div class="nav-btn">
+                            <input class="btn btn-back" type="button" value="BACK" onclick="pagechange(2,1);">
+                            <input class="btn btn-next" type="button" value="NEXT" onclick="validationSection_2();">
+                        </div>
+                        
+                    </div>
+
+                    <!-- third section -->
+                    <div class="info_3" style="visibility: hidden; display: none;" >
+                        <div class="info-title">Payment Information</div>
+                        <div class="paymentMethods">
+                            <div class="methods-lbl">
+                                <label id="lbl-methods" for="methods">Payment Methods</label>
+                            </div>
+                            <div id="payment-methods">
+                                <label for="debit/credit">
+                                    <input type="radio" id="debit/credit" name="payment-methods" value="Debit/Credit Card" required>
+                                    <img src="Images\visa-master-logo.png" alt="credit/debit" >
+                                </label>
+                                <label for="paypal">
+                                    <input type="radio" id="paypal" name="payment-methods" value="Paypal" required>
+                                    <img src="Images\paypal-logo.png" alt="paypal" >
+                                </label>
+                            </div>
+                        </div>
+                        <div class="methods-name">
+                            <div class="card-name-lbl">
+                                <label id="lbl-card-name" for="card-name">Name on Card</label>
+                            </div>
+                            <input type="text" id="card-name" name="card-name" placeholder="WIll Smith" onfocus="this.placeholder=''" onblur="this.placeholder='Will Smith'" required>
+                        </div>
+                        <div class="methods-number-lbl">
+                            <label id="lbl-card-number" for="card-number">Card Number</label>
+                            <label id="lbl-cvv" for="cvv">CVV</label>
+                        </div>
+                        <div class="methods-number">
+                            <input type="text" id="card-number" name="card-number" placeholder="0000-0000-0000-0000" onfocus="this.placeholder=''" onblur="this.placeholder='0000-0000-0000-0000'"  pattern="(\d{4})+-(\d{4})+-(\d{4})+-(\d{4})" maxlength="19" required>
+                            <input type="password" id="cvv" name="cvv" placeholder="***" onfocus="this.placeholder=''" onblur="this.placeholder='***'" pattern="[\d]{3}" maxlength="3" required>
+                        </div>
+                        <div class="expiration">
+                            <div class="expiration-lbl">
+                                <label id="lbl-expiration" for="expiration-date">Expiration Date</label>
+                            </div>
+                            <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" onfocus="this.placeholder=''" onblur="this.placeholder='MM/YY'" pattern="([0-3][0-9])+\/(\d{2})" required>
+                        </div>
+                        
+                        <!-- PREVIOUS and NEXT buttons -->
+                        <div class="nav-btn">
+                            <input class="btn btn-back" type="button" value="BACK" onclick="pagechange(3,2);">
+                            <input class="btn btn-paynow" type="submit" value="PAY NOW" class="btn-pay" onclick="validationSection_3()">
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <!-- mini footer -->
+            <div class="mini-footer">
+                <a class="p1" href="">Refund policy</a>
+                <a class="p2" href="">Shipping policy</a>
+                <a class="p3" href="">Privacy policy</a>
+                <a class="p4" href="">Terms of Service</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="simplify-footer">@2022 HoneyBee. All Rights Reserved</section>
+
+</body>
+</html>

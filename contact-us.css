@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.contact-us-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 280px;
+    background-image: url("images/honey-01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.contact-us-text h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.contact-us-text h2 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.have-some-question-title {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-info {
+    margin-bottom: 30px;
+}
+
+.about-us-info-part {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 20px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ques-col h2 {
+    color: #5a3733;
+    padding: 20px 0px;
+}
+
+.about-us-info-part p {
+    color: #5a3733;
+    padding-left: 10px;
+}
+
+.about-us-info-part i {
+    color: #eb6d2f;
+}
+
+.about-us-info-part p {
+    color: #5a3733;
+}
+
+.social-media {
+    display: flex;
+    justify-content: left;
+}
+
+.sm {
+    margin: 7px;
+}
+
+.sm,
+.facebook,
+.instagram,
+.twitter,
+.youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover,
+.youtube:hover {
+    cursor: pointer;
+    background-color: #555;
+    transition: 0.5s ease;
+}
+
+.sm i {
+    color: white;
+    font-size: 20px;
+}
+
+.facebook {
+    background-color: #4e71a8;
+    transition: 0.5s ease;
+}
+
+.instagram {
+    background-color: #444444;
+    transition: 0.5s ease;
+}
+
+.twitter {
+    background-color: #1cb7eb;
+    transition: 0.5s ease;
+}
+
+.youtube {
+    background-color: #ca3737;
+    transition: 0.5s ease;
+}
+
+.date b {
+    color: #eb6d2f;
+}
+
+.date {
+    margin-bottom: 10px;
+    color: #5a3733;
+}
+
+.ques-container {
+    border-radius: 20px;
+    background-color: #f8f7f1;
+}
+
+.ques-container form {
+    padding: 30px;
+}
+
+.form-content {
+    margin-bottom: 20px;
+}
+
+.form-content h3 {
+    color: #5a3733;
+    font-size: 17px;
+    padding-bottom: 8px;
+}
+
+.form-content input,
+.form-content textarea {
+    outline: none;
+    padding: 20px;
+    border-style: none;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+}
+
+.form-content textarea {
+    height: 120px;
+}
+
+.submit-btn {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn p {
+    color: white;
+}
+
+.submit-btn button {
+    cursor: pointer;
+    border-style: none;
+    border-radius: 30px;
+    background-color: #eb6d2f;
+    width: 170px;
+    height: 50px;
+    transition: 0.3s ease;
+}
+
+.submit-btn button:hover {
+    background-color: #5a3733;
+    transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 900px) {
+    .question-container {
+        display: block;
+        text-align: center;
+    }
+    .about-us-info-part,
+    .social-media {
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+    .form-content input,
+    .form-content textarea {
+        width: 400px;
+    }
+}
