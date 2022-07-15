@@ -23,7 +23,7 @@ a {
     align-items: center;
     width: 100%;
     height: 280px;
-    background-image: url("images/honey-01.jpg");
+    background-image: url("Images/honey-01.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -57,7 +57,7 @@ a {
     height: 351px;
     background-position: center;
     background-size: cover;
-    background-image: url("images/honey-bee.png");
+    background-image: url("Images/honey-bee.png");
     transition: 0.3s ease;
 }
 
@@ -68,7 +68,7 @@ a {
 }
 
 .who-img:hover {
-    background-image: url("images/group-img.jpg");
+    background-image: url("Images/group-img.jpg");
     transition: 0.3s ease;
 }
 
